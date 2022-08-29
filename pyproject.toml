@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "aes-gcm-rsa-oaep"
+version = "0.1.0"
+description = "Kubeseal aes-gcm-rsa-oaep encryption implemented in python"
+authors = ["Sascha Desch <sascha.desch@hotmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+cryptography = "^37.0.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.1.2"
+hypothesis = "^6.54.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
