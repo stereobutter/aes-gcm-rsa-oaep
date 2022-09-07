@@ -6,7 +6,7 @@
 pip install aes-gcm-rsa-oaep
 ```
 
-> :notes: This module depends on the `cryptography`(https://pypi.org/project/cryptography/) module. See [here](https://cryptography.io/en/latest/installation/#building-cryptography-on-linux) for instructions on how to install or build `cryptography` your platform. 
+> :blue_book: This module depends on the `cryptography`(https://pypi.org/project/cryptography/) module. See [here](https://cryptography.io/en/latest/installation/#building-cryptography-on-linux) for instructions on how to install or build `cryptography` your platform. 
 
 ## Usage
 ```python
