@@ -19,6 +19,6 @@ jobs:
         run: poetry build
       - name: publish
         env:
-          USERNAME: ${{ secrets.PYPI_USERNAME }}
+          USERNAME: __token__
           PASSWORD: ${{ secrets.PYPI_PASSWORD }}
         run: poetry publish --username $USERNAME --password $PASSWORD
