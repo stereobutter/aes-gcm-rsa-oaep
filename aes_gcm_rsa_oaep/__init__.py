@@ -20,11 +20,11 @@ def encrypt(plaintext: bytes, public_key: RSAPublicKey, label: Optional[bytes] =
     return rsa_ciphertext_length + rsa_cipher_text + cipher_text
 
 
-def decrypt(ciphertext: bytes, private_key: RSAPrivateKey, label:Optional[bytes] = None):
+def decrypt(ciphertext: bytes, private_key: RSAPrivateKey, label: Optional[bytes] = None):
     rsa_ciphertext_lenth = int.from_bytes(ciphertext[0:2], 'big')
     rsa_ciphertext = ciphertext[2: rsa_ciphertext_lenth + 2]
     aes_ciphertext = ciphertext[rsa_ciphertext_lenth + 2:]
-    
+
     session_key = private_key.decrypt(
         rsa_ciphertext,
         padding.OAEP(

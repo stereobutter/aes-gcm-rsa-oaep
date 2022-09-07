@@ -6,7 +6,7 @@ from aes_gcm_rsa_oaep import encrypt, decrypt
 
 @pytest.fixture(scope='session')
 def rsa_keypair():
-    key = generate_private_key(public_exponent=65537,key_size=4096)
+    key = generate_private_key(public_exponent=65537, key_size=4096)
     return key.public_key(), key
 
 
