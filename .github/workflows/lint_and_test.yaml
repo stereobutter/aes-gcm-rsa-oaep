@@ -17,7 +17,7 @@ jobs:
         with:
           python-version: 3.9
       - name: Python Poetry Action
-        uses: abatilo/actions-poetry@v2.1.4
+        uses: abatilo/actions-poetry@v2.1.6
       - name: setup environment
         run: poetry install
       - name: flake8
@@ -41,7 +41,7 @@ jobs:
         with:
           python-version: '${{ matrix.python }}'
       - name: Python Poetry Action
-        uses: abatilo/actions-poetry@v2.1.4
+        uses: abatilo/actions-poetry@v2.1.6
       - name: setup environment
         run: poetry install
       - name: pytest
