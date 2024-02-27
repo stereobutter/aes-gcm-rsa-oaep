@@ -7,12 +7,12 @@ license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.7"
-cryptography = "^37.0.4"
+cryptography = ">=37.0.4, <43"
 
 [tool.poetry.dev-dependencies]
-pytest = "^7.1.2"
+pytest = ">=7.1.2, <9"
 hypothesis = "^6.54.4"
-flake8 = "^5.0.4"
+flake8 = ">=5.0.4, <8"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
